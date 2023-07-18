@@ -60,9 +60,9 @@ export default function Playlist() {
               </div>
             </div>
             <div className='thirdbox'>
-              <span>分享</span>
-              <span>评论</span>
-              <span>收藏</span>
+              <span>分&nbsp;享</span>
+              <span>评&nbsp;论</span>
+              <span>收&nbsp;藏</span>
             </div>
           </div>
           <div className="songsBody">

@@ -79,10 +79,10 @@
 
 .thirdbox span {
   background-color: rgb(178, 178, 178);
-  opacity: 0.8;
+  opacity: 0.5;
   padding: 5%;
   margin: 5%;
-  border-radius: 15px;
+  border-radius: 20px;
   line-height: 0px;
   color: white;
 }

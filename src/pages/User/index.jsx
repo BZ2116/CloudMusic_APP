@@ -60,7 +60,7 @@ export default function User() {
         <div className='UserNav'>
           <NavLink className='navs' to='mainpage'>主页</NavLink>
           <NavLink className='navs' to='trends'>动态</NavLink>
-          <NavLink className='navs' to='blog'>博客</NavLink>
+          <NavLink className='navs' to='blog'>播客</NavLink>
           <div className={`navline ${location.pathname === '/user/blog' ? 'B' : location.pathname === '/user/trends' ? 'T' : 'M'}`}>—</div>
         </div>
         <Outlet /> </div>) :
