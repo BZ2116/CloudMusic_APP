@@ -1,0 +1,85 @@
+#playpage {
+  width: 100%;
+  height: 108.6%;
+
+}
+
+#playele {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+#backfliter {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://p2.music.126.net/vVNZDKMKb6mMEXxNljaA_g==/109951165274426604.jpg');
+  background-size: 1200px;
+  background-position: -412px 0;
+  filter: blur(80px);
+  position: absolute;
+  z-index: -10;
+}
+
+.playheader {
+  height: 10%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playheaderright {
+  width: 32px;
+  height: 32px;
+  background-image: url(https://s2.music.126.net/style/web2/img/frame/playbar.png?fd62f43…);
+  background-position: -200px -158px;
+  background-repeat: no-repeat;
+  z-index: 100;
+  border-radius: 18px;
+  background-color: rgb(232, 232, 232);
+  background-size: 240px;
+  opacity: 0.3;
+}
+
+.playheadermidbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playheadermidsong {
+  font-size: large;
+
+}
+
+.playheadermidsinger {
+  font-size: small;
+  color: #5b5a5a;
+}
+
+.playback {
+  background-image: url(https://s2.music.126.net/style/web2/img/index/index.png?931a5eb…);
+  background-position: -260px -75px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.playpic {
+  width: 50%;
+  height: 30%;
+  background-image: url('https://p2.music.126.net/vVNZDKMKb6mMEXxNljaA_g==/109951165274426604.jpg');
+  margin-top: 15%;
+  border: 50px black solid;
+  border-radius: 200px;
+  background-repeat: no-repeat;
+  background-position: -48px -26px;
+  background-size: 300px;
+  box-shadow: 3px 3px 5px 3px #e8e8e8;
+}

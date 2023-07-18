@@ -1,0 +1,19 @@
+#blogbox{
+  display: flex;
+  position: relative;
+  top: 30%;
+  align-items: center;
+    flex-direction: column;
+
+}
+
+#blog{
+font-weight:500;
+font-size: larger;
+padding-bottom: 2%;
+}
+#blog2{
+font-size: small;
+color: rgb(139, 139, 139);
+
+}

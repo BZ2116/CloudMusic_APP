@@ -1,0 +1,36 @@
+.detailBox{
+margin: 10px;
+background-color: rgb(255, 255, 255);
+border-radius: 15px;
+}
+hr{
+  width: 80%;
+  opacity: 0.8;
+  margin: auto;
+  border-top: 0.1px;
+}
+
+.detailbox{
+  font-family:sans-serif;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+}
+.detailbox:active{
+  background-color: rgb(218, 219, 219);
+}
+.first{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.last{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.detailtitle{
+  font-size: smaller;
+  color: rgb(112, 111, 111);
+  padding-left: 25px;
+line-height: 30px;
+  height: 30px;
+}

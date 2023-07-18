@@ -1,0 +1,53 @@
+#box2 {
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  height: 50%;
+  margin-bottom: 5%;
+}
+
+#songsListTitle {
+  width: 10%;
+  min-width: fit-content;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+#songsListTitle span{
+  font-size: smaller;
+  color: rgb(139, 139, 139);
+}
+
+.songList {
+  display: flex;
+  margin-top: 4%;
+  /* margin-bottom: 4%; */
+  flex-direction: column;
+}
+
+.songs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  min-height:40px ;
+  height: 40%;
+  margin: 2% 3%;
+}
+
+.songsCover {
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+}
+.songsDetail{
+  margin-left: 5%;
+}
+
+/* .listName{
+
+} */
+.songsAmount{
+  font-size: smaller;
+  color: rgb(139, 139, 139);
+  padding-top: 25%;
+}

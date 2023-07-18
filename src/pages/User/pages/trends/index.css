@@ -1,0 +1,9 @@
+#trendbox{
+  display: flex;
+  position: relative;
+  top: 30%;
+  justify-content: center;
+}
+#trend{
+  top: 30%;
+}

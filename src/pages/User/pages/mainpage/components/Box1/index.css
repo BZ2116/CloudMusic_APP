@@ -1,0 +1,72 @@
+#box1 {
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  height: 50%;
+  margin-bottom: 4%;
+}
+
+#bigbox {
+  display: flex;
+  justify-content: center;
+}
+.box1title{
+  width: 20%;
+  min-width:fit-content;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+.smallbox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 4%;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 100px;
+
+}
+
+.smalltitle {
+  font-size: small;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.data1 {
+
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  font-weight: 500;
+}
+
+.buttom {
+  position: absolute;
+  bottom: 5%;
+left: 3%;
+  font-size: small;
+}
+#a1{
+background-color: rgb(255, 214, 214);
+border: rgb(251, 217, 217);
+opacity: 0.8;
+
+}
+#a2{
+background-color: rgb(254, 255, 218);
+border: rgb(252, 255, 227);
+opacity: 0.8;
+
+
+}
+#a3{
+border: rgb(213, 252, 252);
+background-color: rgb(230, 255, 255);
+opacity: 0.8;
+}

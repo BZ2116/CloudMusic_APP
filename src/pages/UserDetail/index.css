@@ -1,0 +1,122 @@
+html,body{
+  height: 100%;
+}
+::-webkit-input-placeholder{
+  font-size: 10px;
+}
+
+#root{
+  height: 92%;
+  width: 400px;
+  margin: auto;
+}
+#detailBox{
+  background-color: rgb(243, 243, 244);
+  width: 100%;
+  left: 50px;
+  height: 100%;
+}
+#header{
+  background-color: white;
+  height: 10%;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  max-height: 80px;
+  /* line-height: 100%; */
+
+}
+.headerBack{
+  background-image: url('https://s2.music.126.net/style/web2/img/index/index.png?931a5ebca9072207f2a75eac2ae4c304');
+  background-position: -260px -75px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Firstbox{
+background-color: rgb(248, 248, 248);
+margin-top: 10px;
+}
+.Sceondbox{
+  background-color: rgb(248, 248, 248);
+margin-top: 10px;
+}
+.details{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.details:active{
+  background-color: aliceblue;
+}
+#detailcontext{
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#detailcontext textarea{
+  position: absolute;
+  top: 80%;
+  left: 5%;
+height: 10%;
+width: 90%;
+outline: none;
+}
+#detailcontext  p{
+  position: absolute;
+  z-index: 100;
+  right: 5%;
+  bottom: 7.5%;
+  font-size: smaller;
+  color: rgb(142, 142, 142);
+}
+
+.imfos{
+margin-right: 2%;
+}
+#avatarimg{
+  height: 40px;
+  border-radius: 20px;
+}
+.infoChangeshow{
+  display: block;
+    position: absolute;
+  width: 70%;
+  height: 70%;
+  background-color: rgb(227, 227, 227);
+  opacity: 0.5;
+  left: 15%;
+  bottom: 15%;
+}
+.infoChange{
+  display: none;
+}
+.changeHeader{
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.changeHeader span{
+  margin: 0 2%;
+}
+.changeInput{
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+
+}
+.changeInput input{
+  width: 94%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  padding:0 2%;
+ 
+}

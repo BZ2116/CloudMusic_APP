@@ -1,0 +1,42 @@
+.siderTop{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sider {
+  position: fixed;
+  top: 0;
+  left: -330px; /* 初始状态隐藏侧边栏 */
+  width: 330px;
+  height: 100%;
+  background-color: #f4f4f4;
+  transition: left 1s ease; /* 添加过渡效果 */
+  overflow: auto;
+}
+.show-sider {
+  left: 0;  
+}
+.shadow-cover{
+position: fixed;
+  background-color: #c7c7c7;
+ left: -350px;
+width: 70px; 
+  height: 100%;
+  top:0;
+  opacity: 0;
+}
+.shadow-cover-show{
+  left: 330px;
+  opacity: 0.3;
+  transition: opacity 2.5s ease;
+}  
+.avatarimg{
+  height: 50px;
+  width: 50px;
+padding: 10px;
+}
+.avatarimg img{
+  border-radius: 50px;
+  height: 50px;
+}

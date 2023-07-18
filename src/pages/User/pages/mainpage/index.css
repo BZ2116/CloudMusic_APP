@@ -1,0 +1,9 @@
+#mainpagebox {
+  display: flex;
+  position: relative;
+  top: 25%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+}
+
+#UserBox {
+  background-color: rgb(243, 243, 244);
+  width: 100%;
+  left: 50px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.Userhead {
+  position: relative;
+  display: flex;
+  height: 300px;
+}
+
+#returnbutt {
+  z-index: 100;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 20px;
+}
+
+.UserheadCover {
+  background-image: url("http://p1.music.126.net/IrOMEVED-crFisIHIYsMQg==/109951168742395724.jpg?imageView&quality=89");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -170px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: -10px;
+  position: absolute;
+  opacity: 0.5;
+
+}
+
+.UserFirst {
+  background-color: white;
+  width: 90%;
+  position: absolute;
+  top: 93%;
+  left: 5%;
+  border-radius: 10px;
+  height: 50%;
+}
+
+.UserFirst img {
+  width: 70px;
+  border-radius: 35px;
+  position: absolute;
+  top: -35px;
+  left: 40%;
+}
+
+.Username {
+  width: 70px;
+  border-radius: 35px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.UserFirst1 {
+  width: 70%;
+  border-radius: 35px;
+  position: absolute;
+  top: 46%;
+  left: 28%;
+}
+
+.detail1 {
+  padding: 4%;
+  font-size: smaller;
+  color: rgb(206, 208, 209);
+}
+
+.UserSecond {
+  width: 70%;
+  border-radius: 35px;
+  position: absolute;
+  top: 70%;
+  left: 39%;
+}
+
+.detail2 {
+  font-size: smaller;
+  border: 1px solid rgb(186, 186, 186);
+  margin: 2%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6.5px;
+}
+
+
+
+.UserNav {
+  position: relative;
+    top: 22%;
+}
+
+.navs {
+  padding:0 50px;
+  text-decoration: none;
+  color: rgb(143, 143, 143);
+}
+
+.active {
+  color: black;
+}
+
+.navline {
+  margin-left: 50px;
+  width: 10%;
+  color: red;
+  transition: margin-left 0.5s cubic-bezier(1, 0.07, 0, 1.24);
+  font-size: 28px;
+  line-height: 0;
+}
+
+
+.M{
+  margin-left: 50px;
+  transition: margin-left 0.5s cubic-bezier(1, 0.07, 0, 1.24);
+}
+.T{
+  transition: margin-left 0.5s cubic-bezier(0.64, -0.42, 0.35, 1.23);
+  margin-left: 183px;
+}
+.B{
+  margin-left: 314px;
+  transition: margin-left 0.5s cubic-bezier(1, 0.07, 0, 1.24);
+}
+

@@ -1,0 +1,32 @@
+#mainpage{
+ width: 100%;
+ max-width: 400px;
+  margin: auto;
+  position: relative;
+  min-height: 680px;
+  max-height: 700px;
+  overflow:hidden;
+ 
+}
+
+#mainbuttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainbutt{
+padding: 10px;
+background-color: rgb(226, 231, 231);
+width: 65px;
+height: 30px;
+text-decoration-line: none;
+color: black;
+border-radius: 20px;
+text-align: center;
+line-height: 8px;
+}
+h1{
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  border-radius: 15px;
+}
