@@ -50,27 +50,26 @@ export default function UserDtail() {
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
-const [isShow, setisShow] = useState(false)
-function cancel() {
-  setisShow(false)
-}
-function handleChangeNickname() {
-  setisShow(true)
-}
-const handleSub = (event) => {
-  setchangeInputValue(event.target.value);
-};
-function subChange() {
-  axios.get(`https://netease-cloud-music-api-wy6l.vercel.app/user/update?gender=${data.gender}&signature=${inputValue?inputValue:data.signature}&city=${data.city}&&birthday=${data.birthday}&province=${data.province}&nickname=${changeInputValue}`)
-.then((res) => {
-  console.log(res);
-  alert('修改成功')
-})
-}
+  const [isShow, setisShow] = useState(false)
+  function cancel() {
+    setisShow(false)
+  }
+  function handleChangeNickname() {
+    setisShow(true)
+  }
+  const handleSub = (event) => {
+    setchangeInputValue(event.target.value);
+  };
+  function subChange() {
+    axios.get(`https://netease-cloud-music-api-wy6l.vercel.app/user/update?gender=${data.gender}&signature=${inputValue ? inputValue : data.signature}&city=${data.city}&&birthday=${data.birthday}&province=${data.province}&nickname=${changeInputValue}`)
+      .then(() => {
+        alert('修改成功')
+      })
+  }
   return (
     <div id='detailBox'>
       {data ?
-        (<div style={{overflow:'scroll'}}>
+        (<div style={{ overflow: 'scroll' }}>
           <div id="header">
             <span className="headerBack" onClick={handleBackUser}></span>
             我的资料
@@ -80,7 +79,7 @@ function subChange() {
               <img className='imfos' id='avatarimg' src={data.avatarUrl} />
             </div><hr />
             <div className='details'>昵称
-              <div className='imfos'onClick={handleChangeNickname} >{data.nickname}</div>
+              <div className='imfos' onClick={handleChangeNickname} >{data.nickname}</div>
             </div><hr />
             <div className='details'>性别
               <div className='imfos'>{genderTrans(data.gender)}</div>
@@ -97,19 +96,19 @@ function subChange() {
             <div className='details'>音乐标签
               <div className='imfos'></div></div><hr />
             <div className='details' id='detailcontext' >简介
-                <textarea value={inputValue} placeholder={data.signature} onChange={handleChange} />
-                <p>{remainingChars}</p>
+              <textarea value={inputValue} placeholder={data.signature} onChange={handleChange} />
+              <p>{remainingChars}</p>
 
 
             </div>
           </div>
-          <div className={`infoChange${isShow?'show':''}`}>
+          <div className={`infoChange${isShow ? 'show' : ''}`}>
             <div className='changeHeader'>
               <span onClick={cancel} >取消</span>
               <span id='changeTitle'>修改昵称</span>
               <span onClick={subChange}>完成</span>
             </div>
-            <div className='changeInput'><input placeholder={data.nickname} value={changeInputValue} onChange={handleSub}/></div>
+            <div className='changeInput'><input placeholder={data.nickname} value={changeInputValue} onChange={handleSub} /></div>
           </div>
         </div>) :
         (<div>Loading...</div>)

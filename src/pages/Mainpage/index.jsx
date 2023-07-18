@@ -1,5 +1,5 @@
 
-import {  useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './index.css';
 import Sider from './components/sider';
 import { useState } from 'react';
@@ -8,11 +8,7 @@ export default function Main() {
   const [startX, setStartX] = useState(0)
   const [currentX, setCurrentX] = useState(0)
   const [showSider, setShowSider] = useState(false)
-
-  // const props=this.props
   let threshold = 75//滑动阈值
-  // console.log(props);
-
   const handleTouchStart = (event) => {
     setStartX(event.touches[0].clientX);
   };
@@ -30,7 +26,7 @@ export default function Main() {
     }
   };
 
-  const handleSider=() => {
+  const handleSider = () => {
     setShowSider(!showSider)
   }
 
@@ -48,7 +44,7 @@ export default function Main() {
         <button className='mainbutt' onClick={handleLog}>登录</button>
 
       </div>
-      <Sider showSider={showSider} onClick={handleSider}/>
+      <Sider showSider={showSider} onClick={handleSider} />
     </div>
   )
 }

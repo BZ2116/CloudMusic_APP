@@ -103,7 +103,7 @@ section {
 
 
 
-.inputBoxButton{
+.inputBoxButton {
   border-radius: 20px;
   background-color: rgb(232, 233, 234);
   width: 50px;
@@ -111,7 +111,8 @@ section {
   text-align: center;
   line-height: 20px;
 }
-#logbutt{
+
+#logbutt {
   border-radius: 20px;
   border: 1px;
 }

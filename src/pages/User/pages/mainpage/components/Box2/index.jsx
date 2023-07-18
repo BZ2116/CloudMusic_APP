@@ -12,7 +12,6 @@ export default function Box2() {
     try {
       const response = await axios.get('https://netease-cloud-music-api-wy6l.vercel.app/user/playlist?uid=8334102993', { timeout: 5000 });
       setData(response.data.playlist);
-      // console.log(response.data.playlist);
     } catch (error) {
       console.log(error);
       alert('歌单列表连接超时')
@@ -27,7 +26,7 @@ export default function Box2() {
           {/* {components} */}
           {data.slice(1).map((list) => {
             return (
-              <SongsList  lists={list} key={list.name} />)
+              <SongsList lists={list} key={list.name} />)
           })}
         </div>
       </div> :

@@ -1,12 +1,13 @@
 import { useNavigate } from 'react-router-dom'
 import './Footer.css'
-import {useState,useRef} from 'react'
+import {useState} from 'react'
 
 export default function Footer() {
   const [isStart, setisStart] = useState(false)
   // const audioRef = useRef(null);
 
   function handlePlay() {
+    //音乐播放的代码
     // const audioElement = audioRef.current;
     // if (isStart) {
     //   audioElement.pause();
