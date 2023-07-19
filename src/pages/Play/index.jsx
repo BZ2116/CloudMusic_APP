@@ -2,10 +2,11 @@ import { useNavigate } from 'react-router-dom'
 import './index.css'
 
 export default function Play() {
-  const navigate=useNavigate()
-function handleBacktolast() {
-  navigate(-1)
-}
+  const navigate = useNavigate()
+  // 返回上一页面
+  function handleBacktolast() {
+    navigate(-1)
+  }
 
   return (
     <div id='playpage'>
@@ -18,7 +19,7 @@ function handleBacktolast() {
             <div className='playheadermidsinger'>王心凌</div>
           </span>
           <span className='playheaderright'></span>
-      </div>
+        </div>
         <div className='playpic'>456</div>
       </div>
     </div>

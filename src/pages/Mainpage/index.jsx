@@ -5,6 +5,7 @@ import Sider from './components/sider';
 import { useState } from 'react';
 
 export default function Main() {
+  //设置滑动效果
   const [startX, setStartX] = useState(0)
   const [currentX, setCurrentX] = useState(0)
   const [showSider, setShowSider] = useState(false)

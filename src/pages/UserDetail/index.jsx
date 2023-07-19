@@ -15,7 +15,7 @@ export default function UserDtail() {
 
 
   const [data, setData] = useState(null);
-
+  //网络请求
   useEffect(() => {
     fetchData();
   }, []);
@@ -29,6 +29,7 @@ export default function UserDtail() {
       alert('连接超时')
     }
   };
+  //性别转换
   function genderTrans(num) {
     switch (num) {
       case 1:
@@ -60,6 +61,8 @@ export default function UserDtail() {
   const handleSub = (event) => {
     setchangeInputValue(event.target.value);
   };
+
+  //提交更改信息
   function subChange() {
     axios.get(`https://netease-cloud-music-api-wy6l.vercel.app/user/update?gender=${data.gender}&signature=${inputValue ? inputValue : data.signature}&city=${data.city}&&birthday=${data.birthday}&province=${data.province}&nickname=${changeInputValue}`)
       .then(() => {
@@ -98,8 +101,6 @@ export default function UserDtail() {
             <div className='details' id='detailcontext' >简介
               <textarea value={inputValue} placeholder={data.signature} onChange={handleChange} />
               <p>{remainingChars}</p>
-
-
             </div>
           </div>
           <div className={`infoChange${isShow ? 'show' : ''}`}>
@@ -116,4 +117,3 @@ export default function UserDtail() {
     </div>
   )
 }
-// placeholder={`${data.signature}`}

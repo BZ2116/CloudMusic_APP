@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 
 export default function User() {
+  //路由切换
   const location = useLocation()
   const navigate = useNavigate()
   function handleBackMain() {
@@ -19,7 +20,7 @@ export default function User() {
   const [data, setData] = useState(null);
   const [lv, setLv] = useState()
 
-
+  //网络请求
   useEffect(() => {
     fetchData();
   }, []);

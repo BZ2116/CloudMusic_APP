@@ -2,9 +2,11 @@ import './index.css'
 import SongsList from './components/songs'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-// import { useNavigate } from 'react-router-dom';
+
+
 export default function Box2() {
   const [data, setData] = useState([]);
+  // 网络请求
   useEffect(() => {
     fetchData();
   }, []);
@@ -23,7 +25,7 @@ export default function Box2() {
       <div>
         <div id="songsListTitle">创建的歌单<span>({data.length - 1}个)</span></div>
         <div className="songList">
-          {/* {components} */}
+          {/* 根据歌单数量，创建组件 */}
           {data.slice(1).map((list) => {
             return (
               <SongsList lists={list} key={list.name} />)

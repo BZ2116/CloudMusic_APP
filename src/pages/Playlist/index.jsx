@@ -8,17 +8,20 @@ import './index.css'
 export default function Playlist() {
 
   const queryString = window.location.search;
-  // 解析查询字符串
+  // 解析查询字符串，根据地址获取信息，不知道为什么useParams用不了。。。。
+
   const params = new URLSearchParams(queryString);
   const id = params.get('id')
   const name = params.get('name')
+
   const [data, setData] = useState()
   const [datalist, setDataList] = useState()
+  // 网络请求
   useEffect(() => {
     fetchData2()
     fetchData();
-
   }, []);
+  // 获取歌单歌曲信息
   const fetchData = async () => {
     try {
       const response = await axios.get(`https://netease-cloud-music-api-wy6l.vercel.app/playlist/track/all?id=${id}&offset=0`, { timeout: 5000 });
@@ -28,6 +31,7 @@ export default function Playlist() {
       alert('歌单列表连接超时')
     }
   };
+  // 获取歌单信息
   const fetchData2 = async () => {
     try {
       const response = await axios.get(`https://netease-cloud-music-api-wy6l.vercel.app/playlist/detail?id=${id}`, { timeout: 5000 });
@@ -38,13 +42,14 @@ export default function Playlist() {
     }
   };
 
-
+  // 路由切换
   const navigate = useNavigate()
   function handleBackUser() {
     navigate('/user')
   }
   return (<div style={{ height: "100%" }}>
     {
+      // 响应是否返回，data是否接收到数据的逻辑判断
       data && datalist ?
         (<div style={{ height: "100%" }}>
 
@@ -74,11 +79,6 @@ export default function Playlist() {
                     <Listsongs songs={song} index={i} key={i} />
                   )
                 })
-              }
-
-
-              {
-
               }
             </div>
           </div>

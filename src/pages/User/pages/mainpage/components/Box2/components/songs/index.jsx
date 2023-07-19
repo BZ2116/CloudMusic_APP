@@ -2,13 +2,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function SongsList(lists) {
-
-
   const navigate = useNavigate()
   const handleSongs = (n, id) => {
-
     navigate(`/playlist/?name=${n}&id=${id}`)
-
   }
 
 

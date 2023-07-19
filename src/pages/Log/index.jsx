@@ -1,11 +1,12 @@
 import axios from 'axios'
 import './index.css'
 import { useState } from 'react'
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Log() {
   const [phoneData, setPhone] = useState()
   const [passwordData, setPassword] = useState()
+  // 登录的逻辑代码
   const search = () => {
     axios.post(`https://netease-cloud-music-api-wy6l.vercel.app/login/cellphone?phone=${phoneData}&password=${passwordData}`)
       .then((res) => {
@@ -13,10 +14,10 @@ export default function Log() {
       })
 
   }
-  const navigate =useNavigate()
-function handleMain(){
-navigate('/main')
-}
+  const navigate = useNavigate()
+  function handleMain() {
+    navigate('/main')
+  }
 
   return (
     <div>

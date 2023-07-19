@@ -5,8 +5,8 @@ import DetailS from './detailSider';
 import { useState, useEffect } from 'react';
 
 
-export default function Sider({showSider}, { handleSider }) {
-
+export default function Sider({ showSider }, { handleSider }) {
+  // 这里传的参数有时候要报错,但是效果不影响。。。。。
   const navigate = useNavigate()
   function handleUser() {
     navigate('/user')
@@ -16,7 +16,7 @@ export default function Sider({showSider}, { handleSider }) {
   }
 
   const [data, setData] = useState(null);
-
+  // 网络请求
   useEffect(() => {
     fetchData();
   }, []);
